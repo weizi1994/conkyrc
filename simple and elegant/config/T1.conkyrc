@@ -1,0 +1,52 @@
+﻿background yes
+use_xft yes
+xftfont shrapnel:size=9
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+
+own_window yes
+own_window_type dock
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_colour 000000
+own_window_argb_visual no
+own_window_argb_value 0
+
+double_buffer yes
+minimum_size 500 100
+#default_bar_size 60 8
+maximum_width 500
+maximum_length 100
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color c6c4c7
+default_shade_color 000000
+default_outline_color 0054a3
+alignment top_right
+gap_x 1080
+gap_y 5
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+
+
+
+TEXT
+
+${font Tall Films:size=135}${voffset }${color cfcdd4}
+${offset 40}${time %H}:
+${offset 130}${voffset -135}${color F23F44}${time %M}:
+${offset 230}${voffset -185}${font Tall Films:size=55}${color orange}${time %S}
+${offset 80}${voffset -15}${color cfcdd4}${font pf_tempesta_five_condensed Script:size=22}${time %y-%m-%d}
+
+${offset 60}${voffset -05}{ hello world }
+#${if_up eth0}
+#eth0: up ${downspeed eth0} down ${upspeed eth0}
+#${endif}
+#${if_up wlan0}
+#wlan0: up ${downspeed wlan0} down ${upspeed wlan0}
+#${endif}
